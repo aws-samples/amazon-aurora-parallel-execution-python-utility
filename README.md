@@ -25,6 +25,12 @@ B) Retry Logic: In case executions have failed for certain threads, The retry me
 
 C) Database/File Logging: the utility will automatically generate a log file based on date and time of the execution that logs all the necessary succeeded executions/exceptions and help troubleshoot in case of failures. In addition, It logs the success/failure status in a database log table which can be eliminated if not a customer requirement.
 
+As per your customer use-case and environment configuration, Be sure to replace:
+
+a) Queries.
+b) Parameter store credentials specific to your environment.
+c) parameters to determine rows per batch and maximum thread count at a point and time.
+
 ## Security
 
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
